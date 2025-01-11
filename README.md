@@ -1,4 +1,4 @@
-# Code Report 
+# Code Overview 
 ## Overall structure: 
 - used multiple bools to track whether a phase had been started & finished
 - void loop() gets run multiple times, and I want to read some parts over and over like whether a button has been pressed, or IR remote/serial monitor readings.
