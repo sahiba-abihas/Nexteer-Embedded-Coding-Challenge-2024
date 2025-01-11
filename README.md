@@ -1,23 +1,24 @@
 # Nexteer-Embedded-Coding-Challenge-2024
 
-##Overall structure: 
+## Overall structure: 
 - used multiple bools to track whether a phase had been started & finished
 - void loop() gets run multiple times, and I want to read some parts over and over like whether a button has been pressed, or IR remote/serial monitor readings.
 - Phase 3 does need to keep repeating until the directions have been done
 I use all the following below to provide a structure to my simulation and only do the full simulation ONCE:
-'''
+
+```
 bool started = false;
 bool goToPhase1 = false;
-'''
+```
 
-##Setup:
+## Setup:
 - Begin serial monitor
 - Start lcd screen
 - Wifi setup & sending UART commands with nexteer command interface
 - Initializing all necessary hardware such as IR remote, pushbutton, and Shift Register
 - Initializing arrays for phase 4 since setup only runs once
 
-##Loop (actual simulation):
+## Loop (actual simulation):
 - Debounce logic for push button (check whether state has changed)
 - Once button pressed, then bool started becomes true → start printing requirements on LCD screen and checking for IR remote/serial monitor inputs
 - Once proper ID is inputted, continue on to phases
