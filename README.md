@@ -8,7 +8,23 @@ I use all the following below to provide a structure to my simulation and only d
 
 ```
 bool started = false;
+
 bool goToPhase1 = false;
+bool phase1Done = false;
+
+bool goToPhase2 = false;
+bool phase2Done = false;
+
+bool goToPhase3 = false;
+bool phase3Done = false;
+
+bool goToPhase4 = false;
+bool phase4Done = false;
+
+bool goToPhase5 = false;
+bool phase5Done = false;
+
+bool done = false;
 ```
 
 ## Setup:
